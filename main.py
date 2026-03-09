@@ -312,5 +312,4 @@ def send_email(name, email, phone, message):
         connection.sendmail(MAIL_ADDRESS, MAIL_ADDRESS, email_message)
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5001))
-    app.run(host="0.0.0.0", port=port, debug=False)
+    app.run(debug=False, port=5001)
